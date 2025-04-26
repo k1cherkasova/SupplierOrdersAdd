@@ -1,0 +1,14 @@
+﻿<Window x:Class="SupplierOrdersAdd.AddEditOrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавить/Редактировать заказ" Height="350" Width="400">
+    <Grid Margin="10">
+        <StackPanel>
+            <ComboBox Name="SupplierComboBox" DisplayMemberPath="SupplierName" Margin="0,0,0,10" />
+            <DatePicker Name="OrderDatePicker" Margin="0,0,0,10" />
+            <DatePicker Name="ExpectedDeliveryDatePicker"  Margin="0,0,0,10" />
+            <TextBox Name="OrderStatusTextBox"  Margin="0,0,0,10" />
+            <Button Content="Сохранить" Click="SaveButton_Click" HorizontalAlignment="Right" Width="100" />
+        </StackPanel>
+    </Grid>
+    </Window>
